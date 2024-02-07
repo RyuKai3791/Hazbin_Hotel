@@ -1,0 +1,99 @@
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
+:root {
+    --rojo-carmin: #960018; /* Rojo Carmin */
+    --naranja-butano: #ff4800; /*  Naranja Butano */
+    --amarillo-fuego: #ffd700; /* Amarillo Fuego */
+    --purpura-oscuro: #4b0082; /* Púrpura Oscuro */
+    --verde-esmeralda: #008000; /* Verde Esmeralda */
+    --gris-solido: #888888; /*  Gris Solido */
+    --negro-solido: #000000; /* Negro Sólido */
+}
+
+body {
+    background: url(../imgs/logos-wallpapers/red-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 110vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--amarillo-fuego);
+    font-family: Amita;
+    margin: 1% auto;
+    margin-top: 2%;
+    width: 450px;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+img {
+    max-width: 600px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    margin: 18px;
+    border: 8px solid var(--gris-solido);
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: 1s;
+}
+
+img:hover {
+    border: 5px solid var(--naranja-butano);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.08);
+    -webkit-filter: none;
+    filter: none;
+}
+
+.myImg{
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    text-align: center;
+    margin: 10px;
+}
+
+.img-caption {  
+    font-family: Amita;
+    color: var(--amarillo-fuego);
+    font-size: 2.5em;
+    margin-top: 2%;
+}
+
+.caption {
+    font-family: Amita;
+    color: var(--amarillo-fuego);
+    font-size: 4.5em;
+    margin-top: 2%;
+}
+
+/* FOOTER */
+footer {
+    margin-bottom: 3%;
+    color: var(--amarillo-fuego);
+    font-family: Amita;
+    font-size: 1.75em;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    min-width: 100vw;
+}
