@@ -11,7 +11,7 @@
 }
 
 body {
-    background: url(../imgs/logos-wallpapers/red-background.jpg);
+    background: url(../imgs/logos-wallpapers/red-background2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +23,12 @@ body {
     flex-direction: column;
 }
 
+.title {
+    max-width: 1980px;
+    width: 100%;
+    text-align: center;
+}
+
 h1 {
     color: var(--amarillo-fuego);
     font-family: Amita;
@@ -31,10 +37,12 @@ h1 {
     width: 450px;
     font-size: 4.5em;
     text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px white;
 }
 
 img {
-    max-width: 600px;
+    max-width: 575px;
     width: 100%;
     max-height: 350px;
     height: 100%;

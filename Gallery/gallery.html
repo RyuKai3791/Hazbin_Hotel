@@ -7,57 +7,97 @@
     <link rel="shortcut icon" href="imgs/logos-wallpapers/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/preloader.css">
 </head>
 <body>
-    
-    <h1>Hazbin Hotel</h1>
 
-    <div class="container">
+    <div id="preloader">
+        <h2 class="animate">Loading...</h2>
+    </div>
 
-        <div class="image-container">
-            <img class="myImg" src="imgs/characters/alastor.jpg" alt="Alastor">
-            <p class="img-caption">Alastor</p>
-        </div>
+    <div id="contenido" style="display: none;">
         
-        <div class="image-container">
-            <img class="myImg" src="imgs/characters/stolas.jpg" alt="Stolas">
-            <p class="img-caption">Stolas</p>
+        <h1 class="title">Hazbin Hotel Characters</h1>
+
+        <div class="container">
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/alastor.jpg" alt="Alastor">
+                <p class="img-caption">Alastor</p>
+            </div>
+            
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/stolas.jpg" alt="Stolas">
+                <p class="img-caption">Stolas</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/angel-dust.jpg" alt="Angel Dust">
+                <p class="img-caption">Angel Dust</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/husk.jpg" alt="Husk">
+                <p class="img-caption">Husk</p>
+            </div>
+            
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/imp.jpg" alt="I.M.P.">
+                <p class="img-caption">I.M.P.</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/loona.jpg" alt="Loona">
+                <p class="img-caption">Loona</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/paimon.jpg" alt="Paimon">
+                <p class="img-caption">Paimon</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/asmodeus.jpg" alt="Asmodeus">
+                <p class="img-caption">Asmodeus</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/striker.jpg" alt="Striker">
+                <p class="img-caption">Striker</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/valentino.jpg" alt="Valentino">
+                <p class="img-caption">Valentino</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/lucifer.jpg" alt="Lucifer">
+                <p class="img-caption">Lucifer</p>
+            </div>
+
+            <div class="image-container">
+                <img class="myImg" src="imgs/characters/carmilla.jpg" alt="Carmilla">
+                <p class="img-caption">Carmilla</p>
+            </div>
+
+            <!-- MODAL -->
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div class="caption"></div>
+            </div>
+
         </div>
 
-        <div class="image-container">
-            <img class="myImg" src="imgs/characters/angel-dust.jpg" alt="Angel Dust">
-            <p class="img-caption">Angel Dust</p>
-        </div>
-
-        <div class="image-container">
-            <img class="myImg" src="imgs/characters/husk.jpg" alt="Husk">
-            <p class="img-caption">Husk</p>
-        </div>
-
-        <div class="image-container">
-            <img class="myImg" src="imgs/characters/lucifer.jpg" alt="Lucifer">
-            <p class="img-caption">Lucifer</p>
-        </div>
-        
-        <div class="image-container">
-            <img class="myImg" src="imgs/characters/imp.jpg" alt="I.M.P.">
-            <p class="img-caption">I.M.P.</p>
-        </div>
-
-        <!-- MODAL -->
-        <div class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div class="caption"></div>
-        </div>
+        <footer>
+            &copy; Hazbin Hotel 2024 - All Rights Reserved
+        </footer>
 
     </div>
 
-    <footer>
-        &copy; Hazbin Hotel 2024 - All Rights Reserved
-    </footer>
-
     <script src="js/gallery.js"></script>
+    <script src="js/preloader.js"></script>
 
 </body>
 </html>

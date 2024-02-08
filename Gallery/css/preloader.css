@@ -1,0 +1,49 @@
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
+:root {
+    --rojo-carmin: #960018; /* Rojo Carmin */
+    --naranja-butano: #ff4800; /*  Naranja Butano */
+    --amarillo-fuego: #ffd700; /* Amarillo Fuego */
+    --purpura-oscuro: #4b0082; /* Púrpura Oscuro */
+    --verde-esmeralda: #008000; /* Verde Esmeralda */
+    --gris-solido: #888888; /*  Gris Solido */
+    --negro-solido: #000000; /* Negro Sólido */
+}
+
+@keyframes load {
+    0%{
+        opacity: 0.08;
+        font-size: 10px;
+		font-weight: 400;
+		filter: blur(5px);
+		letter-spacing: 3px;
+    }
+
+    100% {
+        /* opacity: 1; */
+        /* font-size: 12px; */
+        /* font-weight:600; */
+        /* filter: blur(0); */
+    }
+}
+
+.animate {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20%;
+    margin-left: 35%;
+	width: 350px;
+	font-size: 4.5em;
+	font-family: Amita;
+	animation: load 2.4s infinite 0s ease-in-out;
+	animation-direction: alternate;
+	text-shadow: 0 0 10px white;
+    color: var(--amarillo-fuego);
+}
+
+body {
+	background: url(../imgs/logos-wallpapers/red-background.jpg);
+    background-position: center;
+    background-repeat: repeat;
+}
