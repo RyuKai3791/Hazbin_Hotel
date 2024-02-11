@@ -1,17 +1,17 @@
-// Onclick
+// ONCLICK FUNCTION TO OPEN MODAL
 function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
 }
 
-// Get the modal
+// GET THE MODAL ELEMENT
 var modal = document.querySelector(".modal");
-        
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+// GET ALL IMAGES AND CAPTION ELEMENT
 var images = document.querySelectorAll('.myImg');
 var captionText = document.querySelector(".caption");
 
-// Set click event for each image
+// SET CLICK EVENT FOR EACH IMAGE
 images.forEach(function(img) {
     img.onclick = function() {
         modal.style.display = "block";
@@ -20,10 +20,10 @@ images.forEach(function(img) {
     }
 });
 
-// Get the <span> element that closes the modal
+// GET THE SPAN ELEMENT TO CLOSE THE MODAL
 var span = document.querySelector(".close");
 
-// When the user clicks on <span> (x), close the modal
+// CLOSE MODAL ON SPAN CLICK
 span.onclick = function() { 
     modal.style.display = "none";
 }

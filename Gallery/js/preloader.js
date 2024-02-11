@@ -1,20 +1,23 @@
+// WAIT FOR WINDOW TO LOAD
 window.addEventListener('load', function() {
-    // ESTABLECER UN TIEMPO MÍNIMO DE CARGA
-    let tiempoMinimo = 2600;
+    // SET MINIMUM LOADING TIME
+    let minLoadingTime = 4900;
 
-    // OBTENER EL TIEMPO ACTUAL
-    let tiempoInicio = new Date().getTime();
+    // GET CURRENT TIME
+    let startTime = new Date().getTime();
 
-    let tiempoRestante = tiempoMinimo - (new Date().getTime() - tiempoInicio);
+    let remainingTime = minLoadingTime - (new Date().getTime() - startTime);
 
-    if (tiempoRestante > 0) {
+    // CHECK IF MINIMUM TIME IS NOT YET ELAPSED
+    if (remainingTime > 0) {
+        // DELAY HIDING THE PRELOADER UNTIL MINIMUM TIME ELAPSES
         setTimeout(function() {
             document.getElementById('preloader').style.display = 'none';
             document.getElementById('contenido').style.display = 'block';
-        }, tiempoRestante);
+        }, remainingTime);
 
     } else {
-        // SI YA HA PASADO EL TIEMPO MÍNIMO, OCULTA EL PRELOADER INMEDIATAMENTE
+        // IF MINIMUM TIME HAS ALREADY ELAPSED, HIDE THE PRELOADER IMMEDIATELY
         document.getElementById('preloader').style.display = 'none';
         document.getElementById('contenido').style.display = 'block';
         var bodyElement = document.body;

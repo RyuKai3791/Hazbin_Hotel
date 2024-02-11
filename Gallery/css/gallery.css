@@ -1,18 +1,21 @@
+/* IMPORTS FONT 'AMITA' WITH WEIGHT 700 */
 @import url(https://fonts.bunny.net/css?family=amita:700);
 
+/* CSS VARIABLE DEFINITIONS */
 :root {
-    --rojo-carmin: #960018; /* Rojo Carmin */
-    --naranja-butano: #ff4800; /*  Naranja Butano */
-    --amarillo-fuego: #ffd700; /* Amarillo Fuego */
-    --purpura-oscuro: #4b0082; /* Púrpura Oscuro */
-    --verde-esmeralda: #008000; /* Verde Esmeralda */
-    --gris-solido: #888888; /*  Gris Solido */
-    --negro-solido: #000000; /* Negro Sólido */
+    --rojo-carmin: #960018; /* Carmine Red */
+    --naranja-butano: #ff4800; /* Butane Orange */
+    --amarillo-fuego: #ffd700; /* Fire Yellow */
+    --purpura-oscuro: #4b0082; /* Dark Purple */
+    --verde-esmeralda: #008000; /* Emerald Green */
+    --gris-solido: #888888; /* Solid Gray */
+    --negro-solido: #000000; /* Solid Black */
 }
 
+/* BODY STYLING */
 body {
-    background: url(../imgs/logos-wallpapers/red-background2.jpg);
-    background-position: center;
+    background: url(../imgs/logos-wallpapers/red-background-4k.jpg);
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -23,12 +26,14 @@ body {
     flex-direction: column;
 }
 
+/* PAGE TITLE STYLING */
 .title {
     max-width: 1980px;
     width: 100%;
     text-align: center;
 }
 
+/* MAIN HEADING STYLING */
 h1 {
     color: var(--amarillo-fuego);
     font-family: Amita;
@@ -38,9 +43,10 @@ h1 {
     font-size: 4.5em;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px white;
+    text-shadow: 5px 5px 10px white;
 }
 
+/* IMAGE STYLING */
 img {
     max-width: 575px;
     width: 100%;
@@ -53,6 +59,7 @@ img {
     transition-duration: 1s;
 }
 
+/* HOVER EFFECT ON IMAGES */
 img:hover {
     border: 5px solid var(--naranja-butano);
     -webkit-transform: scale(1.1);
@@ -62,10 +69,12 @@ img:hover {
     filter: none;
 }
 
-.myImg{
+/* CURSOR STYLE FOR IMAGES */
+.myImg {
     cursor: pointer;
 }
 
+/* CONTAINER STYLING */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -73,11 +82,13 @@ img:hover {
     align-items: center;
 }
 
+/* INDIVIDUAL IMAGE CONTAINER STYLING */
 .image-container {
     text-align: center;
     margin: 10px;
 }
 
+/* CAPTION STYLING */
 .img-caption {  
     font-family: Amita;
     color: var(--amarillo-fuego);
@@ -85,6 +96,7 @@ img:hover {
     margin-top: 2%;
 }
 
+/* MODAL CAPTION STYLING */
 .caption {
     font-family: Amita;
     color: var(--amarillo-fuego);
@@ -92,7 +104,7 @@ img:hover {
     margin-top: 2%;
 }
 
-/* FOOTER */
+/* FOOTER STYLING */
 footer {
     margin-bottom: 3%;
     color: var(--amarillo-fuego);

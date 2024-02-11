@@ -1,25 +1,29 @@
+/* IMPORTS FONT 'AMITA' WITH WEIGHT 700 */
 @import url(https://fonts.bunny.net/css?family=amita:700);
 
+/* CSS VARIABLE DEFINITIONS */
 :root {
-    --rojo-carmin: #960018; /* Rojo Carmin */
-    --naranja-butano: #ff4800; /*  Naranja Butano */
-    --amarillo-fuego: #ffd700; /* Amarillo Fuego */
-    --purpura-oscuro: #4b0082; /* Púrpura Oscuro */
-    --verde-esmeralda: #008000; /* Verde Esmeralda */
-    --gris-solido: #888888; /*  Gris Solido */
-    --negro-solido: #000000; /* Negro Sólido */
+    --rojo-carmin: #960018; /* Carmine Red */
+    --naranja-butano: #ff4800; /* Butane Orange */
+    --amarillo-fuego: #ffd700; /* Fire Yellow */
+    --purpura-oscuro: #4b0082; /* Dark Purple */
+    --verde-esmeralda: #008000; /* Emerald Green */
+    --gris-solido: #888888; /* Solid Gray */
+    --negro-solido: #000000; /* Solid Black */
 }
 
+/* KEYFRAMES ANIMATION FOR LOADING */
 @keyframes load {
-    0%{
+    0% {
         opacity: 0.08;
         font-size: 10px;
-		font-weight: 400;
-		filter: blur(5px);
-		letter-spacing: 3px;
+        font-weight: 400;
+        filter: blur(5px);
+        letter-spacing: 3px;
     }
 
     100% {
+        /* Uncommented properties left as original for reference */
         /* opacity: 1; */
         /* font-size: 12px; */
         /* font-weight:600; */
@@ -27,23 +31,67 @@
     }
 }
 
+/* ANIMATED TEXT STYLING */
 .animate {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20%;
-    margin-left: 35%;
-	width: 350px;
-	font-size: 4.5em;
-	font-family: Amita;
-	animation: load 2.4s infinite 0s ease-in-out;
-	animation-direction: alternate;
-	text-shadow: 0 0 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19%;
+    margin-left: 41%;
+    width: 350px;
+    font-size: 5.5em;
+    font-family: Amita;
+    animation: load 2.4s infinite 0s ease-in-out;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px white;
     color: var(--amarillo-fuego);
 }
 
+/* CONTENT DIV STYLING */
+#contenido {
+    align-items: center;
+    margin-top: 15.85%;
+    /* UNIFIED FADE-IN ANIMATION FOR CROSS-BROWSER SUPPORT */
+    animation: fadeIn 5s;
+}
+
+/* FADE-IN KEYFRAMES ANIMATION */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* INDIVIDUAL FADE-IN KEYFRAMES FOR DIFFERENT BROWSERS */
+@-moz-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-o-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-ms-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+/* HEADING STYLING */
+h2 {
+    font-family: Amita;
+    text-shadow: 0 0 14px white;
+    color: var(--amarillo-fuego);
+    font-size: 4.5em;
+    transition: 0.5s ease-in-out;
+}
+
+/* HOVER EFFECT ON HEADING */
+h2:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.08);
+    -webkit-filter: none;
+    filter: none;
+}
+
+/* BODY STYLING WITH BACKGROUND IMAGE */
 body {
-	background: url(../imgs/logos-wallpapers/red-background.jpg);
+    background: url(../imgs/logos-wallpapers/hazbin-hotel.jpg);
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
 }
