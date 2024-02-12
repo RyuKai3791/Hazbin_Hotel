@@ -37,7 +37,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 19%;
-    margin-left: 41%;
+    margin-left: 48%;
     width: 350px;
     font-size: 5.5em;
     font-family: Amita;
@@ -49,8 +49,11 @@
 
 /* CONTENT DIV STYLING */
 #contenido {
+    max-width: 500px;
+    width: 100%;
     align-items: center;
-    margin-top: 15.85%;
+    margin-top: 15%;
+    margin-left: 41%;
     /* UNIFIED FADE-IN ANIMATION FOR CROSS-BROWSER SUPPORT */
     animation: fadeIn 5s;
 }
