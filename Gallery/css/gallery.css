@@ -53,7 +53,6 @@ img {
     max-height: 350px;
     height: 100%;
     margin: 18px;
-    border: 8px solid var(--gris-solido);
     -webkit-filter: sepia(100%);
     filter: sepia(100%);
     transition-duration: 1s;
@@ -61,10 +60,8 @@ img {
 
 /* HOVER EFFECT ON IMAGES */
 img:hover {
-    border: 5px solid var(--naranja-butano);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.08);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px var(--naranja-butano);
     -webkit-filter: none;
     filter: none;
 }
@@ -93,7 +90,7 @@ img:hover {
     font-family: Amita;
     color: var(--amarillo-fuego);
     font-size: 2.5em;
-    margin-top: 2%;
+    margin-top: 1.5%;
 }
 
 /* MODAL CAPTION STYLING */
@@ -101,7 +98,7 @@ img:hover {
     font-family: Amita;
     color: var(--amarillo-fuego);
     font-size: 4.5em;
-    margin-top: 2%;
+    margin-top: 2.5%;
 }
 
 /* FOOTER STYLING */
@@ -116,4 +113,18 @@ footer {
     align-items: center;
     height: 50px;
     min-width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
 }

@@ -91,3 +91,17 @@
       width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}

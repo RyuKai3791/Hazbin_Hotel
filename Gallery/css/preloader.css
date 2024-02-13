@@ -98,3 +98,13 @@ body {
     overflow: hidden;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    #preloader h2 {
+        font-size: 18px;
+    }
+
+    #contenido h2 {
+        font-size: 24px;
+    }
+}
