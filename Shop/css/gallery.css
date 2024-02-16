@@ -1,0 +1,130 @@
+/* IMPORTS FONT 'AMITA' WITH WEIGHT 700 */
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
+/* CSS VARIABLE DEFINITIONS */
+:root {
+    --rojo-carmin: #960018; /* Carmine Red */
+    --naranja-butano: #ff4800; /* Butane Orange */
+    --amarillo-fuego: #ffd700; /* Fire Yellow */
+    --purpura-oscuro: #4b0082; /* Dark Purple */
+    --verde-esmeralda: #008000; /* Emerald Green */
+    --gris-solido: #888888; /* Solid Gray */
+    --negro-solido: #000000; /* Solid Black */
+}
+
+/* BODY STYLING */
+body {
+    background: url(../imgs/logos-wallpapers/red-background-4k.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 110vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PAGE TITLE STYLING */
+.title {
+    max-width: 1980px;
+    width: 100%;
+    text-align: center;
+}
+
+/* MAIN HEADING STYLING */
+h1 {
+    color: var(--amarillo-fuego);
+    font-family: Amita;
+    margin: 1% auto;
+    margin-top: 2%;
+    width: 450px;
+    font-size: 4.5em;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 10px white;
+}
+
+/* IMAGE STYLING */
+img {
+    max-width: 575px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    margin: 18px;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: 1s;
+}
+
+/* HOVER EFFECT ON IMAGES */
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px var(--naranja-butano);
+    -webkit-filter: none;
+    filter: none;
+}
+
+/* CURSOR STYLE FOR IMAGES */
+.myImg {
+    cursor: pointer;
+}
+
+/* CONTAINER STYLING */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INDIVIDUAL IMAGE CONTAINER STYLING */
+.image-container {
+    text-align: center;
+    margin: 10px;
+}
+
+/* CAPTION STYLING */
+.img-caption {  
+    font-family: Amita;
+    color: var(--amarillo-fuego);
+    font-size: 2.5em;
+    margin-top: 1.5%;
+}
+
+/* MODAL CAPTION STYLING */
+.caption {
+    font-family: Amita;
+    color: var(--amarillo-fuego);
+    font-size: 4.5em;
+    margin-top: 2.5%;
+}
+
+/* FOOTER STYLING */
+footer {
+    margin-bottom: 3%;
+    color: var(--amarillo-fuego);
+    font-family: Amita;
+    font-size: 1.75em;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    min-width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}

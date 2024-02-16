@@ -1,0 +1,107 @@
+:root {
+    --rojo-carmin: #960018; /* Rojo Carmin */
+    --naranja-butano: #ff4800; /*  Naranja Butano */
+    --amarillo-fuego: #ffd700; /* Amarillo Fuego */
+    --purpura-oscuro: #4b0082; /* Púrpura Oscuro */
+    --verde-esmeralda: #008000; /* Verde Esmeralda */
+    --gris-solido: #888888; /*  Gris Solido */
+    --negro-solido: #000000; /* Negro Sólido */
+}
+
+/* MODAL */
+#myImg {
+    cursor: pointer;
+    transition: 1s;
+}
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: var(--negro-solido);
+    background-color: var(--negro-solido);
+}
+  
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+}
+  
+/* Caption of Modal Image */
+.caption {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 1.5%;
+    font-family: Amita;
+    color: var(--amarillo-fuego);
+    font-size: 4.5em;
+}
+  
+/* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--gris-solido);
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}

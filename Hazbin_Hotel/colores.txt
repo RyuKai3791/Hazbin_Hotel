@@ -1,5 +1,0 @@
-color: #960018; /* Rojo Carmin */
-color: #ffd700; /* Amarillo Fuego */
-color: #4b0082; /* Púrpura Oscuro */
-color: #008000; /* Verde Esmeralda */
-color: #000000; /* Negro Sólido */
