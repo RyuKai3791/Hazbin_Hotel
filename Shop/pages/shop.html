@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Hazbin Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3s4Wz6iJgD/+ub2oU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+        <header class="container-fluid bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Tienda de Hazbin Hotel</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#products">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cart">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#checkout">Pagar</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Inicio</h2>
+                    <p>Bienvenido a nuestra tienda de Hazbin Hotel. Explora nuestros posters y selecciona tus favoritos.</p>
+                    <div class="featured-products">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Poster 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Poster 1</h5>
+                                        <p class="card-text">Descripción del poster 1</p>
+                                        <button class="btn btn-primary">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Agrega más productos aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Productos</h2>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#electronics" data-toggle="tab">Electrónica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clothing" data-toggle="tab">Ropa</a>
+                        </li>
+                        <!-- Agrega más categorías aquí -->
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="electronics">
+                            <!-- Agrega productos de la categoría electrónica aquí -->
+                        </div>
+                        <div class="tab-pane fade" id="clothing">
+                            <!-- Agrega productos de la categoría ropa aquí -->
+                        </div>
+                        <!-- Agrega más pestañas de categorías aquí -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Carrito</h2>
+                    <div class="cart-items">
+                        <!-- Agrega los productos agregados al carrito aquí -->
+			                    </div>
+                    <div class="cart-total">
+                        <p>Total: $<span id="cart-total">0</span></p>
+                        <button class="btn btn-primary">Realizar pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout" class="bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Pagar</h2>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Dirección</label>
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ciudad</label>
+                            <input type="text" class="form-control" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">Estado</label>
+                            <input type="text" class="form-control" id="state" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Código postal</label>
+                            <input type="text" class="form-control" id="zip" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-number">Número de tarjeta</label>
+                            <input type="text" class="form-control" id="card-number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiration-date">Fecha de expiración</label>
+                            <input type="text" class="form-control" id="expiration-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" class="form-control" id="cvv" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Confirmar pedido</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid bg-dark text-white text-center">
+        <p>&copy; 2023 Tienda de Hazbin Hotel</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7TlRbs/ic4AwGcFZOxg5DpPt8EgeUIgIwzjWfXQKWA3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
