@@ -1,0 +1,73 @@
+/* IMPORTS FONT 'AMITA' WITH WEIGHT 700 */
+@import url(https://fonts.bunny.net/css?family=amita:700);
+
+/* CSS VARIABLE DEFINITIONS */
+:root {
+    --rojo-carmin: #960018; /* Carmine Red */
+    --naranja-butano: #ff4800; /* Butane Orange */
+    --amarillo-fuego: #ffd700; /* Fire Yellow */
+    --purpura-oscuro: #4b0082; /* Dark Purple */
+    --verde-esmeralda: #008000; /* Emerald Green */
+    --gris-solido: #888888; /* Solid Gray */
+    --negro-solido: #000000; /* Solid Black */
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  z-index: -1;
+  max-width: 1000px;
+  position: absolute;
+  left: 38%;
+  top: 22%;
+}
+
+/* Caption text */
+.text {
+  color: var(--naranja-butano);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--rojo-carmin);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+.active {
+  background-color: var(--purpura-oscuro);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

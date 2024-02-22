@@ -31,6 +31,8 @@ body {
     max-width: 1980px;
     width: 100%;
     text-align: center;
+    margin-top: 2%;
+    font-size: 4.5em;
 }
 
 /* MAIN HEADING STYLING */
@@ -99,6 +101,23 @@ img:hover {
     color: var(--amarillo-fuego);
     font-size: 4.5em;
     margin-top: 2.5%;
+}
+
+/* SHOPPING CART SECTION */
+#shopping-cart {
+    font-family: Amita;
+    color: var(--amarillo-fuego);
+    font-size: 2em;
+}
+
+#shopping-cart-items {
+    font-family: Amita;
+    color: var(--amarillo-fuego);
+    font-size: 1.1em;
+}
+
+.cart-price, .cart-total-price, .cart-item-title {
+    color: var(--amarillo-fuego); 
 }
 
 /* FOOTER STYLING */
